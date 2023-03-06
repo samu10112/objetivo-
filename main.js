@@ -1,4 +1,4 @@
-var canvas=fabric.canvas('myCanvas');
+var canvas=new fabric.Canvas('myCanvas');
 var ball_y=0;
 var ball_x=0;
 var hole_y=400;
@@ -51,25 +51,21 @@ function myKeyDown(e)
 		{
 			up();
 			console.log("up");
-			newImage()
 		}
-		if(keyPressed == '40')
+		if(keyPressed == '40') 
 		{
 			down();
 			console.log("down");
-			newImage()
 		}
 		if(keyPressed == '37')
 		{
 			left();
 			console.log("left");
-			newImage()
 		}
 		if(keyPressed == '39')
 		{
 			right();
 			console.log("right");
-			newImage()
 		}
 	}
 	
